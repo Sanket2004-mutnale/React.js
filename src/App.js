@@ -1,14 +1,18 @@
-import './App.css';
-import AgeCalculator from './Component/AgeCalculator';
-import Navbar from './Component/Restorent page/Navbar'
+import React from 'react'
+import UserCard from './Component/User-Card/UserCard'
+import Login from './Component/Login'
+import Register from './Component/Register'
 
 function App() {
   return (
-   <>
-    <Navbar/>
-   {/*   <AgeCalculator/>  */}
-   </>
-  );
+    <>
+        <Router>
+            <Routes>
+              <Route path ='/Login'/>
+            </Routes>
+        </Router>
+    </>
+  )
 }
 
-export default App;
+export default App
